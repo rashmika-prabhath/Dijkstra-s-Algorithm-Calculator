@@ -1,0 +1,6 @@
+@Optimizer.Server_HostAddress = http://localhost:5128
+
+GET {{Optimizer.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
