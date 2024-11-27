@@ -7,7 +7,7 @@ const App: React.FC = () => {
         <>
             <CssBaseline />
             <>
-                <Container style={{marginTop: '5%', marginLeft:'90%'}}>
+                <Container style={{marginTop: '5%', marginLeft:'65%'}}>
                     <Typography style={{ color: '#fdfdfd' }} variant="h4" align="center">Dijkstra's Algorithm Calculator</Typography>
                     <Typography style={{ color: '#fdfdfd' }} variant="h6" align="center">Discovering Optimal Routes Through Nodes Using Dijkstra's Method</Typography>
                     <DijkstraCalculator />

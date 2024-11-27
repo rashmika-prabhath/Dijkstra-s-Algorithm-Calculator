@@ -13,7 +13,7 @@ import {
     InputLabel,
     Alert,
 } from '@mui/material';
-
+import CalculateIcon from '@mui/icons-material/Calculate';
 interface ShortestPathData {
     nodeNames: string[];
     distance: number;
@@ -111,12 +111,12 @@ const DijkstraCalculator: React.FC = () => {
                         <Button
                             type="button"
                             variant="outlined"
-                            color="secondary"
+                            color="warning"
                             onClick={clearSelection}
                         >
                             Clear
                         </Button>
-                        <Button type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained" color="warning" endIcon={<CalculateIcon />}>
                             Calculate
                         </Button>
                     </Box>
@@ -141,10 +141,11 @@ const DijkstraCalculator: React.FC = () => {
                 {result && (
                     <Box sx={{ mt: 3, textAlign: 'left' }}>
                         <Typography variant="subtitle1">
-                            <strong>Shortest Path:</strong> {result.nodeNames.join(', ')}
+                            From Node Name: "{fromNode}", To Node Name: "{toNode}" : {result.nodeNames.join(', ')}
                         </Typography>
+                        <br></br>
                         <Typography variant="subtitle1">
-                            <strong>Total Distance:</strong> {result.distance}
+                            Total Distance: {result.distance}
                         </Typography>
                     </Box>
                 )}
