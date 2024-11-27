@@ -62,9 +62,10 @@ const DijkstraCalculator: React.FC = () => {
             <Card
                 sx={{
                     p: 4,
-                    width: '100%',
-                    borderRadius: 2,
-                    boxShadow: 3,
+                    minWidth: '300px',
+                    minHeight: '300px',
+                    maxWidth: '300px',
+                    maxHeight: '300px',
                 }}
             >
                 <form onSubmit={handleSubmit} style={{ marginTop: '1rem' }}>
@@ -126,7 +127,17 @@ const DijkstraCalculator: React.FC = () => {
                         {error}
                     </Alert>
                 )}
-
+            </Card>
+            <Card
+                sx={{
+                    p: 4,
+                    minWidth: '300px',
+                    minHeight: '300px',
+                    maxWidth: '300px',
+                    maxHeight: '300px',
+                    marginLeft: '0.1rem',
+                }}
+            >
                 {result && (
                     <Box sx={{ mt: 3, textAlign: 'left' }}>
                         <Typography variant="subtitle1">
