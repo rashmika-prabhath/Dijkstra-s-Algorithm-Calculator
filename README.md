@@ -94,7 +94,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Contact
 Rashmika Prabhath - your.rashmikapb@gmail.com
 
-Project Link: [[https://github.com/yourusername/dijkstra-calculator](https://github.com/rashmika-prabhath/Dijkstra-s-Algorithm-Calculator)]
+Project Link: [https://github.com/rashmika-prabhath/Dijkstra-s-Algorithm-Calculator](https://github.com/rashmika-prabhath/Dijkstra-s-Algorithm-Calculator)
 Acknowledgements
 React
 Material-UI
