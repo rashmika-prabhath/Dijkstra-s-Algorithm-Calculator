@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/dijkstra-calculator.git
+git clone [https://github.com/yourusername/dijkstra-calculator.git](https://github.com/rashmika-prabhath/Dijkstra-s-Algorithm-Calculator)
 
 
 2. Navigate to the project directory:
