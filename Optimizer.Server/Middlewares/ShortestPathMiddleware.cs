@@ -30,16 +30,42 @@ public class ShortestPathMiddleware
     {
         // Add nodes and edges as per the diagram
         graph.AddEdge("A", "B", 4);
+        graph.AddEdge("B", "A", 4);
+
         graph.AddEdge("A", "C", 6);
+        graph.AddEdge("C", "A", 6);
+
         graph.AddEdge("B", "F", 2);
+        graph.AddEdge("F", "B", 2);
+
         graph.AddEdge("C", "D", 8);
+        graph.AddEdge("D", "C", 8);
+
         graph.AddEdge("D", "G", 1);
+        graph.AddEdge("G", "D", 1);
+
         graph.AddEdge("E", "B", 2);
-        graph.AddEdge("E", "G", 5);
+
+        graph.AddEdge("D", "E", 4);
+        graph.AddEdge("E", "D", 4);
+
         graph.AddEdge("F", "E", 3);
+        graph.AddEdge("E", "F", 3);
+
         graph.AddEdge("F", "H", 6);
+        graph.AddEdge("H", "F", 6);
+
+        graph.AddEdge("G", "H", 5);
+        graph.AddEdge("H", "G", 5);
+
+        graph.AddEdge("G", "F", 4);
+        graph.AddEdge("F", "G", 4);
+
         graph.AddEdge("G", "I", 5);
-        graph.AddEdge("H", "I", 8);
+        graph.AddEdge("I", "G", 5);
+
+        graph.AddEdge("E", "I", 8);
+        graph.AddEdge("I", "E", 8);
     }
 }
 
